@@ -1,12 +1,12 @@
 /* app.css */
 
 .kb-btn {
-    min-width: 1.75em;
-    height: 2.5em;
+    min-width: 2em;
+    height: 2.75em;
     background-color: #455A64;
     color: rgb(255 255 255);
     padding: 0.25em;
-    border-radius: 5px;
+    border-radius: 3px;
 }
 
 /* Material Icons */
