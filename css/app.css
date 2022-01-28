@@ -1,12 +1,15 @@
 /* app.css */
 
-.kb-btn {
+.kp-btn {
     min-width: 2em;
     height: 2.75em;
-    background-color: #455A64;
     color: rgb(255 255 255);
     padding: 0.25em;
     border-radius: 3px;
+}
+
+.bg-kp-btn {
+    background-color: #455A64;
 }
 
 /* Material Icons */
