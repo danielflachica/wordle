@@ -20,8 +20,24 @@ let board = new Board(MAX_LETTERS, MAX_GUESSES, gridCellContainers);
 // methods here
 let render = (key) => {
     keypad.press(key);
-    board.addToGrid(key);
-    board.display();
+
+    // handle alpha keys
+    if (ALPHABET.includes(key)) {
+        board.addToGrid(key);
+        board.incrementActiveCell();
+    }
+    // handle action keys (i.e. ['enter', 'backspace'])
+    else {
+        if (key.toLowerCase() == 'backspace') {
+            board.decrementActiveCell();
+            board.removeLastLetter();
+        }
+        if (key.toLowerCase() == 'enter') {
+            console.log('Enter action required');
+        }
+    }
+    
+    board.update();
 }
 
 /* ---------------------------------------------------------------- */
